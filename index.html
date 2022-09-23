@@ -476,7 +476,7 @@
         <form class="form feedback">
           <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-          <div class="form-group">
+          <div class="form-group-input">
             <label class="form-label">
               <input class="form-input" type="text" name="name" />
               <span class="label-text">Ім'я</span>
@@ -486,7 +486,7 @@
             </label>
           </div>
 
-          <div class="form-group">
+          <div class="form-group-input">
             <label class="form-label">
               <input class="form-input" type="tel" name="phone" />
               <span class="label-text">Телефон</span>
@@ -496,7 +496,7 @@
             </label>
           </div>
 
-          <div class="form-group">
+          <div class="form-group-input">
             <label class="form-label">
               <input class="form-input" type="email" name="email" />
               <span class="label-text">Пошта</span>
@@ -506,18 +506,30 @@
             </label>
           </div>
 
-          <label class="form-label" for="comment">
-            Коментар
-            <textarea class="form-area" name="comment" id="comment"></textarea>
-          </label>
+          <div class="form-group-area">
+            <label class="form-label">
+              <textarea class="form-area" name="comment" placeholder="Введіть текст"></textarea>
+              <span class="label-text">Коментар</span>
+            </label>
+          </div>
 
-          <label class="form-label" for="accept">
-            <input class="form-checkbox" type="checkbox" name="accept" id="accept" />
-            Погоджуюся з розсилкою та приймаю
-            <a href="#">Умови договору</a>
-          </label>
+          <div class="form-group checkbox">
+            <label class="form-label">
+              <input class="form-input visually-hidden" type="checkbox" name="accept" />
+              <div class="form-checkbox">
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </div>
+              <span class="label-text">
+                Погоджуюся з розсилкою та приймаю <a class="link" href="#">Умови договору</a>
+              </span>
+            </label>
+          </div>
 
-          <button class="button" type="button">Відправити</button>
+          <div class="form-group wrapper">
+            <button class="button" type="button">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
