@@ -696,6 +696,7 @@ body.modal-open {
   width: 18px;
   height: 18px;
 
+  transform: scale(1.5);
   transition: color var(--animation-duration) var(--animation-function);
 }
 
