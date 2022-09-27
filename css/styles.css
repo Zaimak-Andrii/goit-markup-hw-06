@@ -692,7 +692,7 @@ body.modal-open {
   color: var(--primary-color);
 }
 
-.modal .icon {
+.modal-button > .icon {
   width: 18px;
   height: 18px;
 
@@ -704,7 +704,7 @@ body.modal-open {
 }
 
 .feedback > .form-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -720,30 +720,26 @@ body.modal-open {
 }
 
 .feedback > .form-group-input {
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .feedback > .form-group-area {
   margin-bottom: 20px;
 }
 
-.form-group-input .form-label,
-.form-group-area .form-label {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+.form-group-input {
   color: var(--black-color);
 }
 
-.form-group-input .label-text,
-.form-group-area .label-text {
-  position: absolute;
-  left: 0;
-  top: -4px;
+.form-label {
+  display: inline-block;
 
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
   color: var(--primary-text-color);
-
-  transform: translateY(-100%);
 }
 
 .form-group-input .form-input {
@@ -778,6 +774,11 @@ body.modal-open {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-group-input .form-input:focus-within,
+.form-group-area .form-area:focus-within {
+  border: 1px solid var(--primary-color);
+}
+
 .form-group-input .icon {
   position: absolute;
   left: 12px;
@@ -791,12 +792,7 @@ body.modal-open {
   transition: color var(--animation-duration) var(--animation-function);
 }
 
-.form-group-input .form-input:focus-within,
-.form-group-area .form-area:focus-within {
-  border: 1px solid var(--primary-color);
-}
-
-.form-group-input .form-label:focus-within {
+.form-group-input .form-input:focus + .icon {
   color: var(--primary-color);
 }
 
@@ -940,6 +936,7 @@ body.modal-open {
 .checkbox .form-label {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .checkbox .label-text {
