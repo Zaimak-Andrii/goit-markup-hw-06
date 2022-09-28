@@ -754,6 +754,10 @@ body.modal-open {
   padding: 12px 16px;
 
   resize: none;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 }
 .form-group-input .form-input,
 .form-group-area .form-area {
@@ -767,10 +771,6 @@ body.modal-open {
 }
 
 .form-group-area .form-area::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
